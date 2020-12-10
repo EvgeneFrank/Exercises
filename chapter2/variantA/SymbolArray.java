@@ -1,3 +1,4 @@
+package chapter2.variantA;
 import java.util.HashSet;
 
 /**
