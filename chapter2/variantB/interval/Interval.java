@@ -1,7 +1,7 @@
 package chapter2.variantB.interval;
 /**
- * Класс интервал.
- * @author Евгений
+ * РљР»Р°СЃСЃ РёРЅС‚РµСЂРІР°Р».
+ * @author Р•РІРіРµРЅРёР№
  *
  */
 public class Interval {
@@ -10,11 +10,11 @@ public class Interval {
 	private double m;
 	private boolean right;//true-) false-]
 	/**
-	 * Конструктор.
-	 * @param left левая скобка:true-( false-[
-	 * @param n первое значение
-	 * @param m второе значение
-	 * @param right правая скобка:true-) false-]
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
+	 * @param left Р»РµРІР°СЏ СЃРєРѕР±РєР°:true-( false-[
+	 * @param n РїРµСЂРІРѕРµ Р·РЅР°С‡РµРЅРёРµ
+	 * @param m РІС‚РѕСЂРѕРµ Р·РЅР°С‡РµРЅРёРµ
+	 * @param right РїСЂР°РІР°СЏ СЃРєРѕР±РєР°:true-) false-]
 	 */
 	public Interval(boolean left, double n, double m, boolean right) {
 		this.setLeft(left);
@@ -47,7 +47,7 @@ public class Interval {
 		this.right = right;
 	}
 	/**
-	 * ДЛя отображения правой скобки.
+	 * Р”Р›СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РїСЂР°РІРѕР№ СЃРєРѕР±РєРё.
 	 * @return
 	 */
 	private String toStringLeft() {
@@ -55,7 +55,7 @@ public class Interval {
 		else return "[";
 		}
 	/**
-	 * Для отображения левой скобки.
+	 * Р”Р»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ Р»РµРІРѕР№ СЃРєРѕР±РєРё.
 	 * @return
 	 */
 	private String toStringRight() {
