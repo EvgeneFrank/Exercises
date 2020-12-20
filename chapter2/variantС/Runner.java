@@ -1,4 +1,4 @@
-package chapter2.variantС;
+package chapter2.variantГ‘;
 
 public class Runner {
 	public static void main(String []args) {
@@ -8,10 +8,10 @@ public class Runner {
 		EnterMatrixNN.printMatrix(test);
 		//-1-
 		MatrixOperation.sortStringBubble(test);
-		System.out.println("Матрица, после сортировки по строкам:");
+		System.out.println("РњР°С‚СЂРёС†Р°, РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё РїРѕ СЃС‚СЂРѕРєР°Рј:");
 		EnterMatrixNN.printMatrix(test);
 		MatrixOperation.sortColumnBubble(test);
-		System.out.println("Матрица, после сортировки по столбцам:");
+		System.out.println("РњР°С‚СЂРёС†Р°, РїРѕСЃР»Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё РїРѕ СЃС‚РѕР»Р±С†Р°Рј:");
 		EnterMatrixNN.printMatrix(test);
 		//-2-
 		MatrixOperation.moveUp(test);
@@ -28,25 +28,25 @@ public class Runner {
 		MatrixOperation.sumPositive(test);
 		//-5-
 		MatrixOperation.transpose(test);
-		System.out.println("Матрица после транспонирования:");
+		System.out.println("РњР°С‚СЂРёС†Р° РїРѕСЃР»Рµ С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёСЏ:");
 		EnterMatrixNN.printMatrix(test);
 		//-6-
 		MatrixOperation.printNorma(test);
 		//-7-
 		MatrixOperation.rotate(test);
-		System.out.println("Матрица после поворота: ");
+		System.out.println("РњР°С‚СЂРёС†Р° РїРѕСЃР»Рµ РїРѕРІРѕСЂРѕС‚Р°: ");
 		EnterMatrixNN.printMatrix(test);
 		//-8-
 		MatrixOperation.printDeterminant(test);
 		//-9-
 		MatrixOperation.minusAverage(test);
-		System.out.println("Матрица, полученная после вычитания среднего арифметического из каждого элемента: ");
+		System.out.println("РњР°С‚СЂРёС†Р°, РїРѕР»СѓС‡РµРЅРЅР°СЏ РїРѕСЃР»Рµ РІС‹С‡РёС‚Р°РЅРёСЏ СЃСЂРµРґРЅРµРіРѕ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРіРѕ РёР· РєР°Р¶РґРѕРіРѕ СЌР»РµРјРµРЅС‚Р°: ");
 		EnterMatrixNN.printMatrix(test);
 		//-10-
 		int [][]test10=MatrixOperation.deleteMaxElement(test);
-		System.out.println("Hовая матрица, после удаления строки и столбца, содержащих максимальный элемент: ");
+		System.out.println("HРѕРІР°СЏ РјР°С‚СЂРёС†Р°, РїРѕСЃР»Рµ СѓРґР°Р»РµРЅРёСЏ СЃС‚СЂРѕРєРё Рё СЃС‚РѕР»Р±С†Р°, СЃРѕРґРµСЂР¶Р°С‰РёС… РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚: ");
 		EnterMatrixNN.printMatrix(test10);
-		//-11- Новая матрица необходима для проверки удаления нулей, так как при случайном заполнении появление нулей в столбцах и строках почти нулевая.
+		//-11- РќРѕРІР°СЏ РјР°С‚СЂРёС†Р° РЅРµРѕР±С…РѕРґРёРјР° РґР»СЏ РїСЂРѕРІРµСЂРєРё СѓРґР°Р»РµРЅРёСЏ РЅСѓР»РµР№, С‚Р°Рє РєР°Рє РїСЂРё СЃР»СѓС‡Р°Р№РЅРѕРј Р·Р°РїРѕР»РЅРµРЅРёРё РїРѕСЏРІР»РµРЅРёРµ РЅСѓР»РµР№ РІ СЃС‚РѕР»Р±С†Р°С… Рё СЃС‚СЂРѕРєР°С… РїРѕС‡С‚Рё РЅСѓР»РµРІР°СЏ.
 		int[][] test11=
 				{{5,0,5},
 				{0,0,0},
@@ -54,9 +54,9 @@ public class Runner {
 		EnterMatrixNN.printMatrix(test11);
 		MatrixOperation.condense(test11);
 		System.out.println("----------");
-		//-12 Далее идем по первой матрице.
+		//-12 Р”Р°Р»РµРµ РёРґРµРј РїРѕ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†Рµ.
 		MatrixOperation.printMinimumMove(test);
-		//-13- См. пояснение к 11 заданию. Похожая ситуация.
+		//-13- РЎРј. РїРѕСЏСЃРЅРµРЅРёРµ Рє 11 Р·Р°РґР°РЅРёСЋ. РџРѕС…РѕР¶Р°СЏ СЃРёС‚СѓР°С†РёСЏ.
 		int[][] test13=
 				{{5,0,5},
 				{0,0,0},
@@ -65,7 +65,7 @@ public class Runner {
 		MatrixOperation.zeroToRight(test13);
 		System.out.println("----------");
 		EnterMatrixNN.printMatrix(test13);
-		//-14-См. пояснение к 13 заданию. А кто сказал, что будет легко?хд
+		//-14-РЎРј. РїРѕСЏСЃРЅРµРЅРёРµ Рє 13 Р·Р°РґР°РЅРёСЋ. Рђ РєС‚Рѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р±СѓРґРµС‚ Р»РµРіРєРѕ?С…Рґ
 		double[][] test14=
 					   {{5.4,0,5.6},
 					   {0,0,0},
@@ -73,12 +73,12 @@ public class Runner {
 		EnterMatrixNN.printMatrix(test14);
 		int [][]test141=MatrixOperation.roundMatrix(test14);
 		EnterMatrixNN.printMatrix(test141);
-		//-15- Возвращаемся к начальной матрице. Нули прошли.
+		//-15- Р’РѕР·РІСЂР°С‰Р°РµРјСЃСЏ Рє РЅР°С‡Р°Р»СЊРЅРѕР№ РјР°С‚СЂРёС†Рµ. РќСѓР»Рё РїСЂРѕС€Р»Рё.
 		EnterMatrixNN.printMatrix(test);
 		MatrixOperation.printSaddlePoints(test);
 		//-16-
 		MatrixOperation.increaseSumRows(test);
-		System.out.println("Cортировка по суммам строк: ");
+		System.out.println("CРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СЃСѓРјРјР°Рј СЃС‚СЂРѕРє: ");
 		EnterMatrixNN.printMatrix(test);
 		//-17-
 		MatrixOperation.printLocalMinimum(test);
@@ -89,4 +89,5 @@ public class Runner {
 		}
 	}
 
-//После всех этих издевательств 20 задание делать пока не буду о.о
+//РџРѕСЃР»Рµ РІСЃРµС… СЌС‚РёС… РёР·РґРµРІР°С‚РµР»СЊСЃС‚РІ 20 Р·Р°РґР°РЅРёРµ РґРµР»Р°С‚СЊ РїРѕРєР° РЅРµ Р±СѓРґСѓ Рѕ.Рѕ
+
