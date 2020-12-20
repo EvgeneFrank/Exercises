@@ -2,14 +2,14 @@ package chapter2.variantB.month;
 
 import java.util.Scanner;
 /**
- * Класс описание месяца.
- * @author Евгений
+ * РљР»Р°СЃСЃ РѕРїРёСЃР°РЅРёРµ РјРµСЃСЏС†Р°.
+ * @author Р•РІРіРµРЅРёР№
  *
  */
 public class Month {
 	private int number;
 	/**
-	 * Конструктор. Хранит любое целое число.
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ. РҐСЂР°РЅРёС‚ Р»СЋР±РѕРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ.
 	 * @param number
 	 */
 	public Month(int number) {
@@ -22,52 +22,52 @@ public class Month {
 		this.number = number;
 	}
 	/**
-	 * Вывод на консоль названия месяца.
+	 * Р’С‹РІРѕРґ РЅР° РєРѕРЅСЃРѕР»СЊ РЅР°Р·РІР°РЅРёСЏ РјРµСЃСЏС†Р°.
 	 */
 	public void searchMonth() {
 		switch (getNumber())
 		 {
-		 case 1: System.out.println("январь");
+		 case 1: System.out.println("СЏРЅРІР°СЂСЊ");
 		 break;
-		 case 2:System.out.println("февраль");
+		 case 2:System.out.println("С„РµРІСЂР°Р»СЊ");
 		 break;
-		 case 3: System.out.println("март");
+		 case 3: System.out.println("РјР°СЂС‚");
 		 break;
-		 case 4: System.out.println("апрель");
+		 case 4: System.out.println("Р°РїСЂРµР»СЊ");
 		 break;
-		 case 5: System.out.println("май");
+		 case 5: System.out.println("РјР°Р№");
 		 break;
-		 case 6: System.out.println("июнь");
+		 case 6: System.out.println("РёСЋРЅСЊ");
 		 break;
-		 case 7: System.out.println("июль");
+		 case 7: System.out.println("РёСЋР»СЊ");
 		 break;
-		 case 8: System.out.println("август");
+		 case 8: System.out.println("Р°РІРіСѓСЃС‚");
 		 break;
-		 case 9: System.out.println("сентябрь");
+		 case 9: System.out.println("СЃРµРЅС‚СЏР±СЂСЊ");
 		 break;
-		 case 10: System.out.println("октябрь");
+		 case 10: System.out.println("РѕРєС‚СЏР±СЂСЊ");
 		 break;
-		 case 11: System.out.println("ноябрь");
+		 case 11: System.out.println("РЅРѕСЏР±СЂСЊ");
 		 break;
-		 case 12: System.out.println("декабрь");
+		 case 12: System.out.println("РґРµРєР°Р±СЂСЊ");
 		 break;
-		 default:System.out.println("Это не номер месяца, а что-то другое!!!!");
+		 default:System.out.println("Р­С‚Рѕ РЅРµ РЅРѕРјРµСЂ РјРµСЃСЏС†Р°, Р° С‡С‚Рѕ-С‚Рѕ РґСЂСѓРіРѕРµ!!!!");
 		 break;
 		 }
 	}
 	/**
-	 * Создание месяца пользователем.
+	 * РЎРѕР·РґР°РЅРёРµ РјРµСЃСЏС†Р° РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј.
 	 * @return
 	 */
 	@SuppressWarnings("resource")
 	public static Month enterMonth() {
 		   int number; 
-		   System.out.println("Введите номер месяца: ");
+		   System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РјРµСЃСЏС†Р°: ");
 		   number=new Scanner(System.in).nextInt();
 		   return new Month(number);
 		}
 	/**
-	 * Проверка работоспособности.
+	 * РџСЂРѕРІРµСЂРєР° СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	 * @param args
 	 */
 	public static void main(String [] args) {
