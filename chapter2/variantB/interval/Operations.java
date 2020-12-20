@@ -2,30 +2,30 @@ package chapter2.variantB.interval;
 
 import java.util.Scanner;
 /**
- * Îïåğàöèè íàä èíòåğâàëîì.
- * @author Åâãåíèé
+ * ĞĞ¿ĞµÑ€Ğ°Ñ†Ğ¸Ğ¸ Ğ½Ğ°Ğ´ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ¾Ğ¼.
+ * @author Ğ•Ğ²Ğ³ĞµĞ½Ğ¸Ğ¹
  *
  */
 public class Operations {
 	/**
-	 * Ïîëüçîâàòåëüñêèé ñîçäàíèå èíòåğâàëà.
+	 * ĞŸĞ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒÑĞºĞ¸Ğ¹ ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ°.
 	 * @return
 	 */
 	public static Interval newUserInterval() {
 		double n,m;
 		boolean left,right;
-		System.out.print("Ââåäèòå ëåâóş ãğàíèöó èíòåğâàëà ([,(): ");
+		System.out.print("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ»ĞµĞ²ÑƒÑ Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ†Ñƒ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ° ([,(): ");
 		String tmpLeft=extracted().nextLine();
 		if(tmpLeft.equals("(")) {
 			left=true;
 		}else {
 			left=false;
 		}
-		System.out.print("Ââåäèòå íà÷àëî ïğîìåæóòêà: ");
+		System.out.print("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ°Ñ‡Ğ°Ğ»Ğ¾ Ğ¿Ñ€Ğ¾Ğ¼ĞµĞ¶ÑƒÑ‚ĞºĞ°: ");
 		n=extracted().nextDouble();
-		System.out.print("Ââåäèòå êîíåö ïğîìåæóòêà: ");
+		System.out.print("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ ĞºĞ¾Ğ½ĞµÑ† Ğ¿Ñ€Ğ¾Ğ¼ĞµĞ¶ÑƒÑ‚ĞºĞ°: ");
 		m=extracted().nextDouble();
-		System.out.print("Ââåäèòå ïğàâóş ãğàíèöó èíòåğâàëà (],) ): ");
+		System.out.print("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿Ñ€Ğ°Ğ²ÑƒÑ Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ†Ñƒ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ğ° (],) ): ");
 		String tmpRight=extracted().nextLine();
 		if(tmpRight.equals(")")) {
 			right=true;
@@ -38,32 +38,33 @@ public class Operations {
 		return new Scanner(System.in);
 	}
 	/**
-	 * Ââîä ïîëüçîâàòåëüñêîãî çíà÷åíèÿ è ñğàâíåíèå åãî ïğèíàäëåæíîñòè èíòåğâàëó. Â ïğèíöèïå ìîæíî ğàçäåëèòü íà äâà ìåòîäà.
+	 * Ğ’Ğ²Ğ¾Ğ´ Ğ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ñ‚ĞµĞ»ÑŒÑĞºĞ¾Ğ³Ğ¾ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ñ Ğ¸ ÑÑ€Ğ°Ğ²Ğ½ĞµĞ½Ğ¸Ğµ ĞµĞ³Ğ¾ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ½Ğ¾ÑÑ‚Ğ¸ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ. Ğ’ Ğ¿Ñ€Ğ¸Ğ½Ñ†Ğ¸Ğ¿Ğµ Ğ¼Ğ¾Ğ¶Ğ½Ğ¾ Ñ€Ğ°Ğ·Ğ´ĞµĞ»Ğ¸Ñ‚ÑŒ Ğ½Ğ° Ğ´Ğ²Ğ° Ğ¼ĞµÑ‚Ğ¾Ğ´Ğ°.
 	 * @param inter 
 	 */
 	public static void checkingValue(Interval inter) {
 		double k;
-		System.out.println("Ââåäèòå çíà÷åíèå, äëÿ ïğîâåğêè åãî ïğèíàäëåæíîñòè ê èíòåğâàëó: ");
+		System.out.println("Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ·Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ, Ğ´Ğ»Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ ĞµĞ³Ğ¾ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ½Ğ¾ÑÑ‚Ğ¸ Ğº Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ: ");
 		k=extracted().nextDouble();
 		if(inter.isLeft()==true&&inter.isRight()==true) {
 			if(k>inter.getN()&&k<inter.getM()) {
-				System.out.println("Çíà÷åíèå "+k+" ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
-			}else System.out.println("Çíà÷åíèå "+k+" íå ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
+				System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
+			}else System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ½Ğµ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
 		}
 		if(inter.isLeft()==false&&inter.isRight()==true) {
 			if(k>=inter.getN()&&k<inter.getM()) {
-				System.out.println("Çíà÷åíèå "+k+" ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
-			}else System.out.println("Çíà÷åíèå "+k+" íå ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
+				System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
+			}else System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ½Ğµ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
 		}
 		if(inter.isLeft()==false&&inter.isRight()==false) {
 			if(k>=inter.getN()&&k<=inter.getM()) {
-				System.out.println("Çíà÷åíèå "+k+" ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
-			}else System.out.println("Çíà÷åíèå "+k+" íå ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
+				System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
+			}else System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ½Ğµ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
 		}
 		if(inter.isLeft()==true&&inter.isRight()==false) {
 			if(k>inter.getN()&&k<=inter.getM()) {
-				System.out.println("Çíà÷åíèå "+k+" ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
-			}else System.out.println("Çíà÷åíèå "+k+" íå ïğèíàäëåæèò èíòåğâàëó "+inter.toString());
+				System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
+			}else System.out.println("Ğ—Ğ½Ğ°Ñ‡ĞµĞ½Ğ¸Ğµ "+k+" Ğ½Ğµ Ğ¿Ñ€Ğ¸Ğ½Ğ°Ğ´Ğ»ĞµĞ¶Ğ¸Ñ‚ Ğ¸Ğ½Ñ‚ĞµÑ€Ğ²Ğ°Ğ»Ñƒ "+inter.toString());
 		}
 	}
 }
+
