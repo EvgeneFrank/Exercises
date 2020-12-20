@@ -2,14 +2,13 @@ package chapter2.variantB.nNMatrix;
 
 import java.util.Scanner;
 
-public class NNMatrix {
-	/**
-	 * ДЛя пользовательского ввода размера матрицы.
+**
+	 * Р”Р›СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРіРѕ РІРІРѕРґР° СЂР°Р·РјРµСЂР° РјР°С‚СЂРёС†С‹.
 	 */
 	private static Scanner scanner;
 	/**
-	 * Для заполнения строк.
-	 * Более изящный вариант решения: System.out.println(IntStream.rangeClosed(1,n*n).mapToObj(i->i%n==0?i+"\t\n":i+"\t").collect(Collectors.joining()));
+	 * Р”Р»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ СЃС‚СЂРѕРє.
+	 * Р‘РѕР»РµРµ РёР·СЏС‰РЅС‹Р№ РІР°СЂРёР°РЅС‚ СЂРµС€РµРЅРёСЏ: System.out.println(IntStream.rangeClosed(1,n*n).mapToObj(i->i%n==0?i+"\t\n":i+"\t").collect(Collectors.joining()));
 	 * @param n
 	 * @return
 	 */
@@ -24,7 +23,7 @@ public class NNMatrix {
 		return result;
 	}
 	/**
-	 * Для заполнения столбцов.
+	 * Р”Р»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ СЃС‚РѕР»Р±С†РѕРІ.
 	 * @param n
 	 * @return
 	 */
@@ -39,12 +38,12 @@ public class NNMatrix {
 		return result;
 	}
 	/**
-	 * Проверка работоспособности.
-	 * В перспективе можно и вывод матрицы на консоль вывести в отдельный метод. А также отображение столбцов без отдельного метода.
+	 * РџСЂРѕРІРµСЂРєР° СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
+	 * Р’ РїРµСЂСЃРїРµРєС‚РёРІРµ РјРѕР¶РЅРѕ Рё РІС‹РІРѕРґ РјР°С‚СЂРёС†С‹ РЅР° РєРѕРЅСЃРѕР»СЊ РІС‹РІРµСЃС‚Рё РІ РѕС‚РґРµР»СЊРЅС‹Р№ РјРµС‚РѕРґ. Рђ С‚Р°РєР¶Рµ РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ СЃС‚РѕР»Р±С†РѕРІ Р±РµР· РѕС‚РґРµР»СЊРЅРѕРіРѕ РјРµС‚РѕРґР°.
 	 * @param args
 	 */
 	public static void main(String[]args) {
-		System.out.println("Введите размер квадратной матрицы: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹: ");
 		scanner=new Scanner(System.in);
 		int n=scanner.nextInt();
 		int[][] testS=workChString(n);
