@@ -1,7 +1,7 @@
 package chapter2.variantB.quadraticEquation;
 /**
- * Класс описание квадратного уравнения a*x^2+b*x+c=0
- * @author Евгений
+ * РљР»Р°СЃСЃ РѕРїРёСЃР°РЅРёРµ РєРІР°РґСЂР°С‚РЅРѕРіРѕ СѓСЂР°РІРЅРµРЅРёСЏ a*x^2+b*x+c=0
+ * @author Р•РІРіРµРЅРёР№
  *
  */
 public class QuadraticEquation {
@@ -9,7 +9,7 @@ public class QuadraticEquation {
 	private double b;
 	private double c;
 	/**
-	 * Конструктор.
+	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
 	 * @param a
 	 * @param b
 	 * @param c
@@ -42,14 +42,14 @@ public class QuadraticEquation {
 		return  a+"x^2+"+b+"x+"+c+"=0";
 	}
 	/**
-	 * Дискриминант
+	 * Р”РёСЃРєСЂРёРјРёРЅР°РЅС‚
 	 * @return
 	 */
 	public double discriminant() {
 		return getB()*getB()-4*getA()*getC();
 	}
 	/**
-	 * Вывод на консоль решений.
+	 * Р’С‹РІРѕРґ РЅР° РєРѕРЅСЃРѕР»СЊ СЂРµС€РµРЅРёР№.
 	 * @param abc
 	 */
 	public void decisionQuadraticEquation() {
@@ -64,7 +64,7 @@ public class QuadraticEquation {
 			System.out.println(toString()+"\nx="+x1);
 		}
 		if(discriminant()<0) {
-			System.out.println("Корней на  множестве действительных чисел нет.");
+			System.out.println("РљРѕСЂРЅРµР№ РЅР°  РјРЅРѕР¶РµСЃС‚РІРµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅС‹С… С‡РёСЃРµР» РЅРµС‚.");
 		}
 	}
 }
