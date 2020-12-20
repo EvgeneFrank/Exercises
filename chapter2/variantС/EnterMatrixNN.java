@@ -1,34 +1,34 @@
-package chapter2.variantС;
+package chapter2.variantГ‘;
 
 import java.util.Random;
 import java.util.Scanner;
 
 public class EnterMatrixNN {
 	/**
-	 * Пользовательский ввод размера матрицы.
+	 * РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёР№ РІРІРѕРґ СЂР°Р·РјРµСЂР° РјР°С‚СЂРёС†С‹.
 	 * @return
 	 */
 	@SuppressWarnings("resource")
 	public static int enterSize() {
-		System.out.println("Введите размер квадратной матрицы: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹: ");
 		return new Scanner(System.in).nextInt();
 	}
 	/**
-	 * Заполненние матрицы случайными числами.
-	 * @param size Размер квадратной матрицы.
+	 * Р—Р°РїРѕР»РЅРµРЅРЅРёРµ РјР°С‚СЂРёС†С‹ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё.
+	 * @param size Р Р°Р·РјРµСЂ РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹.
 	 * @return
 	 */
 	public static int[][] newMatrix(int size){
 		int result[][]=new int[size][size];
 		for (int i=0;i<size;i++) {
 			for(int j=0;j<size;j++) {
-				result[i][j]=new Random().nextInt()/1000000;// Поделил, чтобы не получились очень большие числа.
+				result[i][j]=new Random().nextInt()/1000000;// РџРѕРґРµР»РёР», С‡С‚РѕР±С‹ РЅРµ РїРѕР»СѓС‡РёР»РёСЃСЊ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РёРµ С‡РёСЃР»Р°.
 			}
 		}
 		return result;
 	}
 	/**
-	 * Вывод матрицы на консоль.
+	 * Р’С‹РІРѕРґ РјР°С‚СЂРёС†С‹ РЅР° РєРѕРЅСЃРѕР»СЊ.
 	 * @param array
 	 */
 	public static void printMatrix(int[][]array) {
@@ -41,7 +41,7 @@ public class EnterMatrixNN {
 		System.out.println();
 	}
 	/**
-	 * торой вариант вывожда на консоль.
+	 * С‚РѕСЂРѕР№ РІР°СЂРёР°РЅС‚ РІС‹РІРѕР¶РґР° РЅР° РєРѕРЅСЃРѕР»СЊ.
 	 * @param array
 	 */
 	public static void printMatrix(double[][]array) {
