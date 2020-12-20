@@ -1,7 +1,7 @@
 package chapter2.variantB.quadraticEquation;
 /**
- * Проверка работоспособности.
- * @author Евгений
+ * РџСЂРѕРІРµСЂРєР° СЂР°Р±РѕС‚РѕСЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
+ * @author Р•РІРіРµРЅРёР№
  *
  */
 public class Test {
